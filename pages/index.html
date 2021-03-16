@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Visualised Boredom</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../scripts/script.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/styles.css" />
+	</head>
+	<body>
+		<form id="requestForm" onsubmit="return false">
+			<div>
+			
+				<div>
+					<label for="type">Activity Type</label>
+					<br>
+					<select name="type" id="activityType">
+						<option value="education">Education</option>
+						<option value="recreational">Recreational</option>
+						<option value="social">Social</option>
+						<option value="diy">DIY</option>
+						<option value="charity">Charity</option>
+						<option value="cooking">Cooking</option>
+						<option value="relaxation">Relaxation</option>
+						<option value="music">Music</option>
+						<option value="busywork">Busy Ol' Work</option>
+					</select>
+				</div>
+				
+				<div>
+					<label for="price">Price</label>
+					<br>
+					<input name="price" id="activityPrice" type="range" min="0" max="1" step="0.01" />
+				</div>
+				
+				<div>
+					<label for="access">Accessibility</label>
+					<br>
+					<input name="access" id="activityAccess" type="range" min="0" max="1" step="0.01" />
+				</div>
+				
+				<div>
+					<label for="participants">Participants</label>
+					<br>
+					<input name="participants" id="activityParty" type="number" min=0 />
+				</div>
+				
+			</div>
+		</form>
+		
+		<p id="activityText">Activity Here</p>
+		
+		<table id="activityTable">
+			<tr>
+				<th>Type</th>
+				<th>Participants</th>
+			</tr>
+			<tr>
+				<td id="typeCell"><img src="../cat.jpg" /></td>
+				<td id="partyCell">#</td>
+			</tr>
+			<tr>
+				<th>Price</th>
+				<th>Accessibility</th>
+			</tr>
+			<tr>
+				<td id="priceCell">#</td>
+				<td id="accessCell"><img src="../cat.jpg" /></td>
+			</tr>
+		</table>
+	
+	</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

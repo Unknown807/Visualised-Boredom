@@ -1,0 +1,6 @@
+
+#requestForm, #activityText, #activityTable {
+	display: flex;
+	justify-content: center;
+}
+
