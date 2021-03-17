@@ -3,15 +3,14 @@
 	<head>
 		<title>Visualised Boredom</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="../scripts/script.js"></script>
 		<link type="text/css" rel="stylesheet" href="../styles/styles.css" />
 	</head>
 	<body>
 		<form id="requestForm" onsubmit="return false">
-			<div>
+			<div id="requestContainer">
 			
-				<div>
+				<div class="requestSubContainer">
 					<label for="type">Activity Type</label>
 					<br>
 					<select name="type" id="activityType">
@@ -27,28 +26,28 @@
 					</select>
 				</div>
 				
-				<div>
+				<div class="requestSubContainer">
 					<label for="price">Price</label>
 					<br>
 					<input name="price" id="activityPrice" type="range" min="0" max="1" step="0.01" />
 				</div>
 				
-				<div>
+				<div class="requestSubContainer">
 					<label for="access">Accessibility</label>
 					<br>
 					<input name="access" id="activityAccess" type="range" min="0" max="1" step="0.01" />
 				</div>
 				
-				<div>
+				<div class="requestSubContainer">
 					<label for="participants">Participants</label>
 					<br>
-					<input name="participants" id="activityParty" type="number" min=0 />
+					<input name="participants" id="activityParty" type="text" min=0 />
 				</div>
 				
 			</div>
 		</form>
 		
-		<p id="activityText">Activity Here</p>
+		<span id="activityText">Activity Here</span>
 		
 		<table id="activityTable">
 			<tr>
