@@ -1,0 +1,21 @@
+
+.slider {
+	height: 5px;
+	border-radius: 5px;
+	background-color: #d2e5f7;
+	outline: none;
+	transition: 0.5s;
+	margin-top: 10px;
+}
+
+.slider:hover {
+	background-color: #b4d8fa;
+}
+
+.slider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #7dbefa;
+	cursor: pointer;
+}

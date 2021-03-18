@@ -1,0 +1,21 @@
+
+input[type=text], #activity-type {
+	font-family: "Lucida Console", Arial;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: #d2e5f7;
+	border: 1px solid #d2e5f7;
+	border-radius: 5px;
+	text-align: center;
+	transition: 0.5s;
+	outline: none;
+	color: #2e4154;
+}
+
+input[type=text]:hover, #activity-type:hover {
+	background-color: #b4d8fa;
+}
+
+input[type=text]:focus, #activity-type:focus {
+	border: 1px solid grey;
+}

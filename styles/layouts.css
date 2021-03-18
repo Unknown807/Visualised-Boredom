@@ -1,0 +1,29 @@
+
+body {
+	background: linear-gradient(to bottom, #ddf1fd, #b6d7eb);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+
+body > * {
+	font-family: "Lucida Console", Arial;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	color: #2e4154;
+}
+
+.request-sub-container {
+	border: 3px solid #caddfd;
+	background-color: #e7f0fe;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+}
+
+.request-sub-container > * {
+	padding: 5px;
+	margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+}

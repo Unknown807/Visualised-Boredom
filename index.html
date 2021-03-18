@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Visualised Boredom</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script type="text/javascript" src="./scripts/utils.js"></script>
+		<script type="text/javascript" src="./scripts/dropdown.js"></script>
+		<script type="text/javascript" src="./scripts/onload.js"></script>
+		
+		<link type="text/css" rel="stylesheet" href="./styles/layouts.css" />
+		<link type="text/css" rel="stylesheet" href="./styles/inputs.css" />
+		<link type="text/css" rel="stylesheet" href="./styles/table.css" />
+		<link type="text/css" rel="stylesheet" href="./styles/slider.css" />
+		<link type="text/css" rel="stylesheet" href="./styles/dropdown.css" />
+		<link type="text/css" rel="stylesheet" href="./styles/activities.css" />
+	</head>
+	<body onLoad="setup()">
+		<form id="request-form" onsubmit="return false">
+			<div id="request-container">
+				<div class="request-sub-container" id="type-area">
+					<label>Activity Type</label>
+					<br>
+					<select id="activity-type">
+						<option value="education">Education</option>
+						<option value="recreational">Recreational</option>
+						<option value="social">Social</option>
+						<option value="diy">DIY</option>
+						<option value="charity">Charity</option>
+						<option value="cooking">Cooking</option>
+						<option value="relaxation">Relaxation</option>
+						<option value="music">Music</option>
+						<option value="busywork">Busy Ol' Work</option>
+					</select>
+				</div>
+				
+				<div class="request-sub-container" id="price-area">
+					<label id="price-label" >Price</label>
+					<br>
+					<input class="slider" id="activity-price" type="range" min="0" max="1" step="0.01" />
+					<br>
+					<span id="price-dropdown">+</span>
+					<div id="price-container"></div>
+				</div>
+				
+				<div class="request-sub-container" id="access-area">
+					<label id="access-label">Access</label>
+					<br>
+					<input class="slider" id="activity-access" type="range" min="0" max="1" step="0.01" />
+					<br>
+					<span id="access-dropdown">+</span>
+					<div id="access-container"></div>
+				</div>
+				
+				<div class="request-sub-container" id="party-area">
+					<label>Participants</label>
+					<br>
+					<input id="activity-party" type="text" min=0 />
+				</div>
+				
+			</div>
+		</form>
+		
+		<span id="get-activity">Find Something To Do</span>
+		
+		<span id="activity-text">Random Activity</span>
+		
+		<table id="activity-table">
+			<tr>
+				<th id="type-heading">Type</th>
+				<th id="party-heading">Participants</th>
+			</tr>
+			<tr>
+				<td id="type-cell"><img src="cat.jpg" /></td>
+				<td id="party-cell">#</td>
+			</tr>
+			<tr>
+				<th id="price-heading">Price</th>
+				<th id="access-heading">Accessibility</th>
+			</tr>
+			<tr>
+				<td id="price-cell">#</td>
+				<td id="access-cell"><img src="cat.jpg" /></td>
+			</tr>
+		</table>
+	
+	</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

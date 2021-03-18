@@ -1,0 +1,44 @@
+
+#request-form, #activity-text, #activity-table, #get-activity {
+	display: flex;
+	justify-content: center;
+}
+
+#get-activity {
+	font-size: 16px;
+	padding: 5px;
+	margin: 5vh 0 0 0;
+}
+
+#get-activity:hover {
+	animation-iteration-count: infinite;
+	animation-name: activity-hover;
+	animation-duration: 1s;
+	cursor: pointer;
+}
+
+#activity-type {
+  appearance: none;
+  width: 175px;
+}
+
+#activity-text {
+	font-size: 64px;
+	margin: 15vh 0 15vh 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#activity-text:hover {
+	color: #0afa4e;
+}
+
+@keyframes activity-hover {
+	50% { 
+		transform: scaleX(2) scaleY(2);
+		color: #0afa4e;
+	}
+	100% { 
+		transform: scaleX(1/2) scaleY(1/2);
+	}
+}

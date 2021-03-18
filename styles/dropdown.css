@@ -1,0 +1,29 @@
+
+#price-dropdown, #access-dropdown {
+	cursor: pointer;
+}
+
+.priceRange, .accessRange {
+	display: none;
+}
+
+#type-area {
+	grid-area: type;
+}
+
+#access-area {
+	grid-area: access;
+}
+
+#price-area {
+	grid-area: price;
+}
+
+#party-area {
+	grid-area: party;
+}
+
+#request-container {
+	display: grid;
+	grid-template-areas: "type price access party";
+}
