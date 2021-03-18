@@ -1,10 +1,11 @@
-html {
+
+body {
 	background: linear-gradient(to bottom, #ddf1fd, #b6d7eb);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:100%;
-	
+	min-height: 100vh;
 }
+
 
 body > * {
 	font-family: "Lucida Console", Arial;
@@ -14,12 +15,13 @@ body > * {
 	color: #2e4154;
 }
 
-#requestContainer {
+
+#request-container {
 	display: flex;
 	float: left;
 }
 
-.requestSubContainer {
+.request-sub-container {
 	border: 3px solid #caddfd;
 	background-color: #e7f0fe;
 	border-radius: 20px;
@@ -27,12 +29,12 @@ body > * {
 	margin: 0.5vh 0.5vw 0.5vh 0.5vw;
 }
 
-.requestSubContainer > * {
+.request-sub-container > * {
 	padding: 5px;
 	margin: 0.5vh 0.5vw 0.5vh 0.5vw
 }
 
-#activityType {
+#activity-type {
   font-family: "Lucida Console", Arial;
   font-weight: bold;
   font-size: 16px;
@@ -45,15 +47,19 @@ body > * {
   width: 175px;
 }
 
-#activityType:focus, #activityParty:focus {
+#activity-type:focus, #activity-party:focus {
 	border: 1px solid grey;
 }
 
-#activityParty {
+#activity-type:hover, #activity-party:hover {
+	background-color: #b4d8fa;
+}
+
+#activity-party {
 	font-family: "Lucida Console", Arial;
 	font-weight: bold;
 	font-size: 16px;
-	background-color: #d2e5f7; 
+	background-color: #d2e5f7;
 	border: 1px solid #d2e5f7;
 	border-radius: 5px;
 	text-align: center;
@@ -62,14 +68,65 @@ body > * {
 	color: #2e4154;
 }
 
-#activityText {
-	font-size: 64px;
-	margin-top: 10vh;
-	margin-bottom: 10vh;
+.slider {
+	height: 5px;
+	border-radius: 5px;
+	background-color: #d2e5f7;
+	outline: none;
+	transition: 0.5s;
+	margin-top: 10px;
 }
 
-#requestForm, #activityText, #activityTable {
+.slider:hover {
+	background-color: #b4d8fa;
+}
+
+.slider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #7dbefa;
+	cursor: pointer;
+}
+
+#activity-text {
+	font-size: 64px;
+	margin: 15vh 0 15vh 0;
+}
+
+#request-form, #activity-text, #activity-table, #get-activity {
 	display: flex;
 	justify-content: center;
+}
+
+#get-activity {
+	font-size: 16px;
+	padding: 5px;
+	margin: 5vh 0 0 0;
+}
+
+#get-activity:hover {
+	animation-iteration-count: infinite;
+	animation-name: activity-hover;
+	animation-duration: 1s;
+	cursor: pointer;
+}
+
+#activity-table {
+	margin-bottom: 5vh;
+}
+
+th, td {
+	padding: 15px;
+}
+
+@keyframes activity-hover {
+	50% { 
+		transform: scaleX(2) scaleY(2);
+		color: #0afa4e;
+	}
+	100% { 
+		transform: scaleX(1/2) scaleY(1/2);
+	}
 }
 

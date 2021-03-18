@@ -6,14 +6,13 @@
 		<script type="text/javascript" src="../scripts/script.js"></script>
 		<link type="text/css" rel="stylesheet" href="../styles/styles.css" />
 	</head>
-	<body>
-		<form id="requestForm" onsubmit="return false">
-			<div id="requestContainer">
-			
-				<div class="requestSubContainer">
+	<body onLoad="setup()">
+		<form id="request-form" onsubmit="return false">
+			<div id="request-container">
+				<div class="request-sub-container">
 					<label for="type">Activity Type</label>
 					<br>
-					<select name="type" id="activityType">
+					<select name="type" id="activity-type">
 						<option value="education">Education</option>
 						<option value="recreational">Recreational</option>
 						<option value="social">Social</option>
@@ -26,45 +25,47 @@
 					</select>
 				</div>
 				
-				<div class="requestSubContainer">
+				<div class="request-sub-container">
 					<label for="price">Price</label>
 					<br>
-					<input name="price" id="activityPrice" type="range" min="0" max="1" step="0.01" />
+					<input name="price" class="slider" id="activity-price" type="range" min="0" max="1" step="0.01" />
 				</div>
 				
-				<div class="requestSubContainer">
+				<div class="request-sub-container">
 					<label for="access">Accessibility</label>
 					<br>
-					<input name="access" id="activityAccess" type="range" min="0" max="1" step="0.01" />
+					<input name="access" class="slider" id="activity-access" type="range" min="0" max="1" step="0.01" />
 				</div>
 				
-				<div class="requestSubContainer">
+				<div class="request-sub-container">
 					<label for="participants">Participants</label>
 					<br>
-					<input name="participants" id="activityParty" type="text" min=0 />
+					<input name="participants" id="activity-party" type="text" min=0 />
 				</div>
 				
 			</div>
 		</form>
 		
-		<span id="activityText">Activity Here</span>
+		<span id="get-activity">Find Something To Do</span>
 		
-		<table id="activityTable">
+		<span id="activity-text">Activity Here</span>
+		
+		<table id="activity-table">
 			<tr>
-				<th>Type</th>
-				<th>Participants</th>
+				<th id="type-heading">Type</th>
+				<th id="party-heading">Participants</th>
 			</tr>
 			<tr>
-				<td id="typeCell"><img src="../cat.jpg" /></td>
-				<td id="partyCell">#</td>
+				<td id="type-cell"><img src="../cat.jpg" /></td>
+				<td id="party-cell">#</td>
 			</tr>
 			<tr>
-				<th>Price</th>
-				<th>Accessibility</th>
+				<th id="price-heading">Price</th>
+				<th id="access-heading">Accessibility</th>
 			</tr>
 			<tr>
-				<td id="priceCell">#</td>
-				<td id="accessCell"><img src="../cat.jpg" /></td>
+				<td id="price-cell">#</td>
+				<td id="access-cell"><img src="../cat.jpg" /></td>
 			</tr>
 		</table>
 	
