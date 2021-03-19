@@ -1,5 +1,5 @@
 
-#request-form, #activity-text, #activity-table, #get-activity {
+#request-form, #activity-text, #get-activity {
 	display: flex;
 	justify-content: center;
 }
@@ -31,6 +31,17 @@
 
 #activity-text:hover {
 	color: #0afa4e;
+}
+
+#type-label:hover, #price-label:hover, 
+#access-label:hover, #party-label:hover {
+	text-decoration-line: line-through;
+	cursor: pointer;
+}
+
+.ignored-activity {
+	text-decoration-line: line-through;
+	opacity: 0.5;
 }
 
 @keyframes activity-hover {

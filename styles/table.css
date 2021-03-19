@@ -1,6 +1,8 @@
 
 
 #activity-table {
+	display: none;
+	justify-content: center;
 	margin-bottom: 5vh;
 }
 

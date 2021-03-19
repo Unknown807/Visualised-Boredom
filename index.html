@@ -4,6 +4,7 @@
 		<title>Visualised Boredom</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
+		<script type="text/javascript" src="./scripts/requests.js"></script>
 		<script type="text/javascript" src="./scripts/utils.js"></script>
 		<script type="text/javascript" src="./scripts/dropdown.js"></script>
 		<script type="text/javascript" src="./scripts/onload.js"></script>
@@ -19,7 +20,7 @@
 		<form id="request-form" onsubmit="return false">
 			<div id="request-container">
 				<div class="request-sub-container" id="type-area">
-					<label>Activity Type</label>
+					<label id="type-label" >Activity Type</label>
 					<br>
 					<select id="activity-type">
 						<option value="education">Education</option>
@@ -53,7 +54,7 @@
 				</div>
 				
 				<div class="request-sub-container" id="party-area">
-					<label>Participants</label>
+					<label id="party-label">Participants</label>
 					<br>
 					<input id="activity-party" type="text" min=0 />
 				</div>
