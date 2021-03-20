@@ -8,12 +8,11 @@
 	font-size: 16px;
 	padding: 5px;
 	margin: 5vh 0 0 0;
+	transition: 0.5s;
 }
 
 #get-activity:hover {
-	animation-iteration-count: infinite;
-	animation-name: activity-hover;
-	animation-duration: 1s;
+	color: #0afa4e;
 	cursor: pointer;
 }
 
@@ -42,14 +41,4 @@
 .ignored-activity {
 	text-decoration-line: line-through;
 	opacity: 0.5;
-}
-
-@keyframes activity-hover {
-	50% { 
-		transform: scaleX(2) scaleY(2);
-		color: #0afa4e;
-	}
-	100% { 
-		transform: scaleX(1/2) scaleY(1/2);
-	}
 }
