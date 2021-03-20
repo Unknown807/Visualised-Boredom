@@ -1,4 +1,42 @@
 
+
+const IMGS = [
+	[
+		[FREE, C],
+		[Q1, C],
+		[Q2, C],
+		[Q3, C],
+		[Q4, C],
+		[EXP, C]
+	],
+	[
+		[FREE, C],
+		[Q1, C],
+		[Q2, C],
+		[Q3, C],
+		[Q4, C],
+		[EXP, C]
+	],
+	[
+		[YOU, C],
+		[TWO, C],
+		[THR, C],
+		[FOR, C],
+		[FIV, C]
+	],
+	[
+		[EDU, C],
+		[REC, C],
+		[SOC, C],
+		[DIY, C],
+		[CHA, C],
+		[COO, C],
+		[REL, C],
+		[MUS, C],
+		[BUS, C]
+	]
+];
+
 var priceOpen = true;
 var accessOpen = true;
 var typeOpen = true;
@@ -56,12 +94,12 @@ function setup() {
 		partyInput.classList.toggle("ignored-activity");
 	}
 	
-	activityText.mouseenter = function() {
+	activityText.onmouseenter = function() {
 		prevActivityText = activityText.innerHTML;
 		activityText.innerHTML = "Random Activity";
 	}
 	
-	activityText.mouseleave = function() {
+	activityText.onmouseleave = function() {
 		activityText.innerHTML = prevActivityText; 
 	}
 	
@@ -107,16 +145,5 @@ function setup() {
 	adjustSlider("Access: ", accessLabel, accessSlider);
 	accessSlider.oninput = function() { 
 		adjustSlider("Access: ", accessLabel, accessSlider); 
-	}
-	
-}
-
-function adjustSlider(prefix, label, slider) {
-	let val = slider.value;
-	if (val.length == 3) {
-		val += "0";
-	} else if (val.length == 1) {
-		val += ".00";
-	}
-	label.innerHTML = prefix + val;
+	}	
 }
