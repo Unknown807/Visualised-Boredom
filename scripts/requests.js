@@ -58,10 +58,8 @@ function useReceivedActivityData(data) {
 			return 2;
 		} else if (val <= 0.75) {
 			return 3;
-		} else if (val <= 0.99) {
+		} else if (val <= 1) {
 			return 4;
-		} else {
-			return 5;
 		}
 	}
 
@@ -84,7 +82,6 @@ function useReceivedActivityData(data) {
 	let access = data["accessibility"];
 	let party = data["participants"];
 	let type = data["type"];
-	let link = data["link"];
 	
 	price = checkRangeType(price);
 	access = checkRangeType(access);
@@ -97,25 +94,23 @@ function useReceivedActivityData(data) {
 		}
 	}
 	
-	updateTable(activityTable, "price", 0, price, link);
-	updateTable(activityTable, "access", 1, access, link);
-	updateTable(activityTable, "party", 2, party-1, link);
-	updateTable(activityTable, "type", 3, type, link);
+	updateTable(activityTable, "price", price);
+	updateTable(activityTable, "access", access);
+	//updateTable(activityTable, "party", party, link);
+	//updateTable(activityTable, "type", type, link);
 	
 	activityTable.style.display = "flex";
 	
 }
 
-function updateTable(table, activityType, imgListIndex, imgIndex, link) {
+function updateTable(table, activityType, imgIndex) {
 		let heading = document.getElementById(activityType+"-heading");
-		let cell = document.getElementById(activityType+"-cell");
 		let img = document.getElementById(activityType+"-img");
 		
-		let imgArr = IMGS[imgListIndex][imgIndex];
-		let imgPath = imgArr[0];
-		let headColor = imgArr[1];
+		let imgName = activityType+imgIndex;
+		let imgPath = "./imgs/"+imgName+".png";
+		let headColor = IMGCOLORS[imgName];
 		
 		heading.style.color = headColor;
-		cell.href = link;
 		img.src = imgPath;
 }

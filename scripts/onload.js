@@ -1,5 +1,5 @@
 
-
+/* Structure Reference
 const IMGS = [
 	[
 		[FREE, C],
@@ -36,6 +36,20 @@ const IMGS = [
 		[BUS, C]
 	]
 ];
+*/
+
+const IMGCOLORS = {
+	"price0":"#B1FC7A",
+	"price1":"#FFF200",
+	"price2":"#FCD914",
+	"price3":"#F9A902",
+	"price4":"#E2121D",
+	"access0":"#B1FC7A",
+	"access1":"#FFF200",
+	"access2":"#FCD914",
+	"access3":"#F9A902",
+	"access4":"#E2121D",
+};
 
 var priceOpen = true;
 var accessOpen = true;
