@@ -96,7 +96,7 @@ function useReceivedActivityData(data) {
 	
 	updateTable(activityTable, "price", price);
 	updateTable(activityTable, "access", access);
-	//updateTable(activityTable, "party", party, link);
+	//updateTable(activityTable, "party", party-1, link);
 	//updateTable(activityTable, "type", type, link);
 	
 	activityTable.style.display = "flex";

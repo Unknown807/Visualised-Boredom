@@ -39,16 +39,18 @@ const IMGS = [
 */
 
 const IMGCOLORS = {
-	"price0":"#B1FC7A",
-	"price1":"#FFF200",
-	"price2":"#FCD914",
-	"price3":"#F9A902",
-	"price4":"#E2121D",
-	"access0":"#B1FC7A",
-	"access1":"#FFF200",
-	"access2":"#FCD914",
-	"access3":"#F9A902",
-	"access4":"#E2121D",
+	"price0":"#83ba5b", "price1":"#FFF200", "price2":"#FCD914",
+	"price3":"#F9A902",	"price4":"#E2121D",
+	
+	"access0":"#83ba5b", "access1":"#FFF200", "access2":"#FCD914",
+	"access3":"#F9A902", "access4":"#E2121D",
+	
+	"type0":"", "type1":"", "type2":"",
+	"type3":"", "type4":"", "type5":"",
+	"type6":"", "type7":"", "type8":"",
+	
+	"party0":"", "party1":"", "party2":"",
+	"party3":"", "party4":""
 };
 
 var priceOpen = true;
