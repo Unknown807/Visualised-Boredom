@@ -91,6 +91,8 @@ function useReceivedActivityData(data) {
 	
 	
 	activityText.innerHTML = data["activity"];
+	activityText.style.color = "green";
+	setTimeout(function() { activityText.style.color = "#2e4154"; }, 500);
 	
 	activityTable.style.display = "flex";
 }
