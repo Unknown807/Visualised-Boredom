@@ -22,8 +22,6 @@ var partyOpen = true;
 var priceRangeOpen = false;
 var accessRangeOpen = false;
 
-var prevActivityText = "Get Random Activity";
-
 function setup() {
 	let priceLabel = document.getElementById("price-label");
 	let priceSlider = document.getElementById("activity-price");
@@ -69,15 +67,6 @@ function setup() {
 		partyOpen = !partyOpen;
 		partyLabel.classList.toggle("ignored-activity");
 		partyInput.classList.toggle("ignored-activity");
-	}
-	
-	activityText.onmouseenter = function() {
-		prevActivityText = activityText.innerHTML;
-		activityText.innerHTML = "Get Random Activity";
-	}
-	
-	activityText.onmouseleave = function() {
-		activityText.innerHTML = prevActivityText; 
 	}
 	
 	activityText.onclick =  function() {
