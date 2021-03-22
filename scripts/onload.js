@@ -6,7 +6,7 @@ const IMGCOLORS = {
 	"access0":"#83ba5b", "access1":"#FFF200", "access2":"#FCD914",
 	"access3":"#F9A902", "access4":"#E2121D",
 	
-	"typeeducation":"#7092BE", "typetyperecreational":"#AA0055", "typesocial":"#DCF296",
+	"typeeducation":"#7092BE", "typerecreational":"#AA0055", "typesocial":"#DCF296",
 	"typediy":"#ECCA9B", "typecharity":"#1A697D", "typecooking":"#FFD1BB",
 	"typerelaxation":"#FFF982", "typemusic":"#FFCEDE", "typebusywork":"#88DBFF",
 	
