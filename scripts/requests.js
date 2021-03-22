@@ -65,8 +65,6 @@ function useReceivedActivityData(data) {
 
 	let activityText = document.getElementById("activity-text");
 	let activityTable = document.getElementById("activity-table");
-
-	console.log(data);
 	
 	if (data.hasOwnProperty("error")) {
 		if (data["error"][0] == "N") {
@@ -86,21 +84,15 @@ function useReceivedActivityData(data) {
 	price = checkRangeType(price);
 	access = checkRangeType(access);
 	
-	let typeSelect = document.getElementById("activity-type");
-	for ( let i=0; i<typeSelect.length; i++) {
-		if (typeSelect[i].childNodes[0].nodeValue === type) {
-			type = i;
-			break;
-		}
-	}
-	
 	updateTable(activityTable, "price", price);
 	updateTable(activityTable, "access", access);
-	//updateTable(activityTable, "party", party-1, link);
-	//updateTable(activityTable, "type", type, link);
+	updateTable(activityTable, "party", party-1);
+	updateTable(activityTable, "type", type);
+	
+	
+	activityText.innerHTML = data["activity"];
 	
 	activityTable.style.display = "flex";
-	
 }
 
 function updateTable(table, activityType, imgIndex) {

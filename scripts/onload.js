@@ -1,43 +1,4 @@
 
-/* Structure Reference
-const IMGS = [
-	[
-		[FREE, C],
-		[Q1, C],
-		[Q2, C],
-		[Q3, C],
-		[Q4, C],
-		[EXP, C]
-	],
-	[
-		[FREE, C],
-		[Q1, C],
-		[Q2, C],
-		[Q3, C],
-		[Q4, C],
-		[EXP, C]
-	],
-	[
-		[YOU, C],
-		[TWO, C],
-		[THR, C],
-		[FOR, C],
-		[FIV, C]
-	],
-	[
-		[EDU, C],
-		[REC, C],
-		[SOC, C],
-		[DIY, C],
-		[CHA, C],
-		[COO, C],
-		[REL, C],
-		[MUS, C],
-		[BUS, C]
-	]
-];
-*/
-
 const IMGCOLORS = {
 	"price0":"#83ba5b", "price1":"#FFF200", "price2":"#FCD914",
 	"price3":"#F9A902",	"price4":"#E2121D",
@@ -45,12 +6,12 @@ const IMGCOLORS = {
 	"access0":"#83ba5b", "access1":"#FFF200", "access2":"#FCD914",
 	"access3":"#F9A902", "access4":"#E2121D",
 	
-	"type0":"", "type1":"", "type2":"",
-	"type3":"", "type4":"", "type5":"",
-	"type6":"", "type7":"", "type8":"",
+	"typeeducation":"#7092BE", "typetyperecreational":"#AA0055", "typesocial":"#DCF296",
+	"typediy":"#ECCA9B", "typecharity":"#1A697D", "typecooking":"#FFD1BB",
+	"typerelaxation":"#FFF982", "typemusic":"#FFCEDE", "typebusywork":"#88DBFF",
 	
-	"party0":"", "party1":"", "party2":"",
-	"party3":"", "party4":""
+	"party0":" #99D9EA", "party1":"#EFE4B0", "party2":"#FFAEC9",
+	"party3":"#D9F28C", "party4":"#C8BFE7"
 };
 
 var priceOpen = true;
@@ -61,7 +22,7 @@ var partyOpen = true;
 var priceRangeOpen = false;
 var accessRangeOpen = false;
 
-var prevActivityText = "Random Activity";
+var prevActivityText = "Get Random Activity";
 
 function setup() {
 	let priceLabel = document.getElementById("price-label");
@@ -112,7 +73,7 @@ function setup() {
 	
 	activityText.onmouseenter = function() {
 		prevActivityText = activityText.innerHTML;
-		activityText.innerHTML = "Random Activity";
+		activityText.innerHTML = "Get Random Activity";
 	}
 	
 	activityText.onmouseleave = function() {
