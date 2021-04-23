@@ -3,6 +3,7 @@
 ## Description
 
 A program that allows you to interactively use the BoredAPI (https://www.boredapi.com/) and get back responses in a graphical way.
+Edit: I should've used svg for the graphics, but the ms paint was just too tempting
 
 ## How To Use
 
