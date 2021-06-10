@@ -10,7 +10,7 @@ Edit: I should've used svg for the graphics, but the ms paint was just too tempt
 
 ## How To Use
 
-<table align="center"><tr><td align="center" width="9999">
+<div align="center">
 
 The query options will be at the top and they let you choose what type of activity you want to do, what the cost and accessibility of the activity should be and how many people you want to participate (doesn't return any activites greater than 5).
 
@@ -27,4 +27,4 @@ If you don't want to include certain parameters, then if you click on the parame
 To use the parameters when sending the query, press the 'Find Something To Do' label beneath the options. To skip having to omit the options, to get a truly random activity, press the large text in the middle of the page that displays the activities.
 
 ![alt text](/repo_imgs/img4.JPG)
-</td></tr></table>
+</div>
