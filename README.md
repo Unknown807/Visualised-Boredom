@@ -1,10 +1,10 @@
 # Visualised-Boredom
 
-View it on pages: https://unknown807.github.io/Visualised-Boredom/ (In my experience it looks good on Firefox)
+Have a go via <a href="https://unknown807.github.io/Visualised-Boredom/">GitHub pages</a> (In my experience it looks good on Firefox)
 
 ## Description
 
-A program that allows you to interactively use the BoredAPI (https://www.boredapi.com/) and get back responses in a graphical way.
+A program that allows you to interactively use the <a href="https://www.boredapi.com/">BoredAPI</a> and get back responses in a graphical way.
 
 Edit: I should've used svg for the graphics, but the ms paint was just too tempting
 
